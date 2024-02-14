@@ -84,6 +84,8 @@ public class ListingDao {
 		return itemMasterList;
 	}
 
+	
+	//test
 	public String updateItemListingDetails(ItemMaster iue) throws SQLException, ClassNotFoundException {
 		Connection conn = getConnectioDetails();
 		String updateStatus = "Invalid";
