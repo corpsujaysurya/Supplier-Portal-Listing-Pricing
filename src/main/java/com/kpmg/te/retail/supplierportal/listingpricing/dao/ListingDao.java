@@ -143,6 +143,7 @@ public class ListingDao {
 				preparedStatement.setString(11, itemMaster.getCreatedDateTime());
 				preparedStatement.addBatch();
 			}
+			preparedStatement.executeBatch();
 			preparedStatement.close();
 			conn.close();
 			return "Batch Records Inserterd Successfully";

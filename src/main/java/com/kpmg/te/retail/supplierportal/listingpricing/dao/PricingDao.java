@@ -141,6 +141,7 @@ public class PricingDao {
 				preparedStatement.setString(12, priceMaster.getCreatedDateTime());
 				preparedStatement.addBatch();
 			}
+			preparedStatement.executeBatch();
 			preparedStatement.close();
 			conn.close();
 			return "Batch Records Inserterd Successfully";
