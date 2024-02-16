@@ -71,6 +71,7 @@ public class ListingDao {
 		while (rs.next()) {
 			itemMasterObj = new ItemMaster();
 			itemMasterObj.setItemId(rs.getString("item_Id"));
+			itemMasterObj.setItemName(rs.getString("ITEM_NAME"));
 			itemMasterObj.setItemDescription(rs.getString("item_Description"));
 			itemMasterObj.setSku(rs.getString("sku"));
 			itemMasterObj.setCategory(rs.getString("category"));
