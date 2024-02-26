@@ -51,6 +51,7 @@ public class PricingDao {
 			priceMasterObj.setItemName(rs.getString("item_name"));
 			priceMasterObj.setCategory(rs.getString("category"));
 			priceMasterObj.setPrice(rs.getString("price"));
+			priceMasterObj.setNewSubmittedPrice(rs.getString("new_submitted_price"));
 			priceMasterObj.setStatus(rs.getString("status"));
 			priceMasterList.add(priceMasterObj);
 		}
