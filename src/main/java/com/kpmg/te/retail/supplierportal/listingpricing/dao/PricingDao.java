@@ -124,7 +124,7 @@ public class PricingDao {
 		try {
 			Connection conn = getConnectioDetails();
 			conn.setAutoCommit(true);
-			String insertQuery = "INSERT INTO SUPPLIER_PORTAL.ITEM_LISTING_MASTER(UNIQUE_ID, ITEM_ID, ITEM_NAME, ITEM_DESCRIPTION, SKU,PRICE,NEW_SUBMITTED_PRICE,STATUS,CATEGORY,IMAGE_URL,REMOVE_ITEM_FLAG,CREATED_DATETIME)"
+			String insertQuery = "INSERT INTO SUPPLIER_PORTAL.COST_CHANGE_MASTER(UNIQUE_ID, ITEM_ID, ITEM_NAME, ITEM_DESCRIPTION, SKU,PRICE,NEW_SUBMITTED_PRICE,STATUS,CATEGORY,IMAGE_URL,REMOVE_ITEM_FLAG,CREATED_DATETIME)"
 					+ " VALUES" + "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 			preparedStatement = conn.prepareStatement(insertQuery);
 			for(PriceMaster priceMaster: priceMasterDBList) {
